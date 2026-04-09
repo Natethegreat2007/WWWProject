@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sekuya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Lingua Franca</title>
+</head>
+<body>
+    <div class="home_title">
+        <h1 id="typing"></h1>
+        <h2>Do you know the language of computers?</h2>
+    </div>
+    <div class="rules">
+    <ul>
+        <li>Pick a difficulty and answer the question correctly.</li>
+        <li>Check the leaderboard at the end of each round!</li>
+
+    </ul>
+    </div>
+
+    <div class="difficulty_grid">
+        <div class="easy">
+            <span id="diff">EASY</span>
+            10 pts each <br>
+            <button class="start_button">
+                START GAME
+            </button>
+        </div>
+        <div class="medium">
+             <span id="diff">MEDIUM</span>       
+            20 pts each <br>
+            <button class="start_button">
+                START GAME
+            </button>
+        </div>
+        <div class="hard">
+            <span id="diff">HARD</span>
+            30 pts each <br>
+            <button class="start_button">
+                START GAME
+            </button>
+        </div>
+    </div>
+
+
+
+<script>
+const words = ["LINGUA FRANCA", "JavaScript", "C++", "Data Structures"];
+let wordIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+const typingElement = document.getElementById("typing");
+
+function type() {
+    const currentWord = words[wordIndex];
+
+    if (isDeleting) {
+        charIndex--;
+    } else {
+        charIndex++;
+    }
+
+    typingElement.textContent = currentWord.substring(0, charIndex);
+
+    let speed = isDeleting ? 50 : 100;
+
+    if (!isDeleting && charIndex === currentWord.length) {
+
+        speed = wordIndex == 0 ? 4000 : 1200; // pause before deleting
+        isDeleting = true;
+    } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        wordIndex = (wordIndex + 1) % words.length;
+        speed = 300; // pause before typing next
+    }
+
+    setTimeout(type, speed);
+}
+
+type();
+</script>
+
+</body>
+</html>
