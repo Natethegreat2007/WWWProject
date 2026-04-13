@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sekuya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Lingua Franca</title>
+</head>
+<body>
+    <!--Changes based on easy, medium, hard-->
+    <h1>Placeholder (EASY)</h1>
+    <div class="question_box">
+        <canvas id="matrix_canvas"></canvas>
+        <p class="question_number">Question 01</p>
+        <p class="question_text">Question </p>
+    </div>
+</body>
+<script>
+const canvas = document.getElementById('matrix_canvas');
+const context = canvas.getContext('2d');
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+
+const alphabet = "01001010 11001010 00110101 10101010 01100110 11001100 00111100 10011001";
+
+const fontSize = 16;
+const columns = canvas.width/fontSize;
+
+const rainDrops = [];
+
+for( let x = 0; x < columns; x++ ) {
+	rainDrops[x] = 1;
+}
+
+const draw = () => {
+	context.fillStyle = 'rgba(0, 0, 0, 0.05)';
+	context.fillRect(0, 0, canvas.width, canvas.height);
+	
+	context.fillStyle = '#5a6e12';
+	context.font = fontSize + 'Bitcount Grid Double';
+
+	for(let i = 0; i < rainDrops.length; i++)
+	{
+		const text = alphabet.charAt(Math.floor(Math.random() * alphabet.length));
+		context.fillText(text, i*fontSize, rainDrops[i]*fontSize);
+		
+		if(rainDrops[i]*fontSize > canvas.height && Math.random() > 0.975){
+			rainDrops[i] = 0;
+        }
+		rainDrops[i]++;
+	}
+};
+
+setInterval(draw, 30);
+</script>
+</html>

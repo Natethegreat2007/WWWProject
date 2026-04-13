@@ -1,165 +1,237 @@
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
- 
-        body {
-            background-color: #0d0d0d;
-            color: white;
-            font-family: "Share Tech Mono", monospace;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 2.5rem;
-            padding: 2rem;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-            background: linear-gradient(135deg, #07170f, #000000, #0a1f14);
-        }
-        body::before {
-            content: "";
-            position: fixed;
-            inset: 0;
+body {
+    background-color: #0d0d0d;
+    color: white;
+    font-family: "Share Tech Mono", monospace;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, #07170f, #000000, #0a1f14);
+}
 
-            background: rgba(33, 123, 56, 0.2); 
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(33, 123, 56, 0.2);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    z-index: -1;
+}
 
-            z-index: -1;
-        }
- 
-        .home_title {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1rem;
-            text-align: center;
-        }
- 
-        /*Heading 1 title; see the js script for the animation functionality*/
-        #typing::after {
-            content: "|";
-            margin-left: 5px;
-            animation: blink 1s infinite;
-        }
+/*HOME PAGE: */
 
-        @keyframes blink {
-            0%, 50%, 100% { opacity: 1; }
-            25%, 75% { opacity: 0; }
-        }
+.home_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
 
-        h1 {
-            border-radius: 12px;
-            background-color: rgb(33, 123, 56);
-            padding: 14px 32px;
-            font-size: 2.2rem;
-            font-weight: 700;
-            letter-spacing: 0.08em;
-            
-            background: rgba(33, 239, 84, 0.281); /* semi-transparent */
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px); /* Safari */
+/* Heading 1 title; see the js script for the animation functionality */
+#typing::after {
+    content: "|";
+    margin-left: 5px;
+    animation: blink 1s infinite;
+}
 
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-        /*Subtitle with blinking brightness*/
-        @keyframes pulse {
-            0%   { color: #aaaaaaa9; }
-            50%  { color: #ffffff; }
-            100% { color: #aaaaaaa9; }
-        }
-        h2 {
-            font-size: 1rem;
-            font-weight: 400;
-            letter-spacing: 0.04em;
-            animation: pulse 2s infinite ease-in-out;
-        }
- 
-        .rules {
-            background-color: #1a1a1a;
-            border-left: 4px solid rgb(33, 123, 56);
-            border-radius: 8px;
-            padding: 1.25rem 1.75rem;
-            max-width: 480px;
-            width: 100%;
-        }
+@keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0; }
+}
 
-                .rules ul {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: 0.75rem;
-        }
- 
-        .rules ul li {
-            font-size: 0.85rem;
-            color: white;
-            padding-left: 1.25rem;
-            position: relative;
-            line-height: 1.6;
-        }
- 
-        .rules ul li::before {
-            content: ">";
-            position: absolute;
-            left: 0;
-            color: rgb(33, 123, 56);
-            font-weight: 700;
-        }
+h1 {
+    border-radius: 12px;
+    background-color: rgb(33, 123, 56);
+    padding: 18px 48px;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    background: rgba(33, 239, 84, 0.281);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
 
-        .difficulty_grid {
-            display: grid;
-            font-family: "Bitcount Grid Double", system-ui;
-            grid-template-columns: repeat(3, 1fr);  /* force 3 equal columns */
-            gap: 1rem;
-            width: 100%;
-            max-width: 760px;
-        }
+/* Subtitle with blinking brightness */
+@keyframes pulse {
+    0%   { color: #aaaaaaa9; }
+    50%  { color: #ffffff; }
+    100% { color: #aaaaaaa9; }
+}
 
-        .easy, .medium, .hard {
-            border-radius: 12px;
-            padding: 1.5rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1rem;
-            font-size: 0.85rem;
-            color: #cccccc;
-            max-width: 180px;
-        }
+h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    animation: pulse 2s infinite ease-in-out;
+}
 
-        .easy{
-            background: rgb(33, 205, 76);
-            border: 1px solid rgba(255, 255, 255, 0.5);
-            color: black;
+.rules {
+    background-color: #1a1a1a;
+    border-left: 4px solid rgb(33, 123, 56);
+    border-radius: 8px;
+    padding: 1.25rem 1.75rem;
+    max-width: 480px;
+    width: 100%;
+}
 
-        }
-        .medium{
-            background: rgb(205, 165, 33);
-            border: 1px solid rgba(255, 255, 255, 0.5);
-            color: black;
+.rules ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
 
-        }
-        .hard{
-            background: rgb(205, 33, 33);
-            border: 1px solid rgba(255, 255, 255, 0.5);
-            color: black;
+.rules ul li {
+    font-size: 0.85rem;
+    color: white;
+    padding-left: 1.25rem;
+    position: relative;
+    line-height: 1.6;
+}
 
-        }
+.rules ul li::before {
+    content: ">";
+    position: absolute;
+    left: 0;
+    color: rgb(33, 123, 56);
+    font-weight: 700;
+}
 
-        .start_button{
-            font-family: "Bitcount Grid Double", system-ui;
-            border: 1px solid;
-            padding: 4px;
-            background: none;
-            border-radius: 20%;
-        }
-        .start_button:hover{
-            background-color: aliceblue;
-        }
+.difficulty_grid {
+    display: grid;
+    font-family: "Bitcount Grid Double", system-ui;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    width: 100%;
+    max-width: 1000px;
+}
 
-        #diff{
-            font-size: large;
-        }
+.easy, .medium, .hard {
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.85rem;
+    color: #cccccc;
+    max-width: 280px;
+    width: 100%;
+    aspect-ratio: 1 / 1;  /* aspect ratio can keep the boxes square when screen size changes!*/
+    justify-content: center;
+}
+
+.easy {
+    background: rgb(33, 205, 76);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: black;
+}
+
+.medium {
+    background: rgb(205, 165, 33);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: black;
+}
+
+.hard {
+    background: rgb(205, 33, 33);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: black;
+}
+
+.start_button {
+    font-family: "Bitcount Grid Double", system-ui;
+    border: 1px solid;
+    padding: 4px;
+    background: none;
+    border-radius: 20%;
+}
+
+.start_button:hover {
+    background-color: aliceblue;
+}
+
+#diff {
+    font-size: x-large;
+}
+/*MOBILE:*/
+@media (max-width: 768px) {
+    .difficulty_grid {
+        grid-template-columns: 1fr;
+        max-width: 480px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+        padding: 12px 20px;
+    }
+
+    h2 {
+        font-size: 0.9rem;
+    }
+}
+
+/*QUESTIONS: */
+.question_box {
+    background: #0d0d0d;
+    border: 1px solid rgba(33, 123, 56, 0.6);
+    border-left: 4px solid rgb(33, 205, 76);
+    border-radius: 8px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 700px;
+    font-family: "Share Tech Mono", monospace;
+    position: relative;
+    overflow: hidden;
+}
+
+/* matrix digital rain in the background */
+.question_box::before {
+    content: "01001010 11001010 00110101 10101010 01100110 11001100 00111100 10011001";
+    position: absolute;
+    inset: 0;
+    padding: 1rem;
+    font-size: 0.6rem;
+    color: rgba(33, 205, 76, 0.07);
+    word-break: break-all;
+    line-height: 1.6;
+    pointer-events: none;
+    z-index: 0;
+}
+
+#matrix_canvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    border-radius: 8px;
+}
+.question_text {
+    position: relative;
+    z-index: 1;
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    color: white;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.question_number {
+    position: relative;
+    z-index: 1;
+    font-size: 0.75rem;
+    color: rgb(33, 205, 76);
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.1em;
+}
