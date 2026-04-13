@@ -5,3 +5,4 @@ BJORK,60,medium
 Gavin,20,easy
 Gavin,30,easy
 Jon,30,easy
+gurt,30,easy
