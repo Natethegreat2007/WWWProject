@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,25 +32,19 @@
 
     <div class="difficulty_grid">
         <div class="easy">
-            <span id="diff">EASY</span>
+            <span class="diff">EASY</span>
             10 pts each <br>
-            <button class="start_button">
-                START GAME
-            </button>
+            <button class="start_button" onclick="window.location.href='questions.php?difficulty=easy'">START GAME</button>
         </div>
         <div class="medium">
-             <span id="diff">MEDIUM</span>       
+             <span class="diff">MEDIUM</span>
             20 pts each <br>
-            <button class="start_button">
-                START GAME
-            </button>
+            <button class="start_button" onclick="window.location.href='questions.php?difficulty=medium'">START GAME</button>
         </div>
         <div class="hard">
-            <span id="diff">HARD</span>
+            <span class="diff">HARD</span>
             30 pts each <br>
-            <button class="start_button">
-                START GAME
-            </button>
+           <button class="start_button" onclick="window.location.href='questions.php?difficulty=hard'">START GAME</button>
         </div>
     </div>
 
