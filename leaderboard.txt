@@ -1,0 +1,7 @@
+Gavin,40,easy
+Born,0,easy
+Bjork,40,medium
+BJORK,60,medium
+Gavin,20,easy
+Gavin,30,easy
+Jon,30,easy
