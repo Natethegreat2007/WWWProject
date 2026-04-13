@@ -144,6 +144,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['difficulty'])) {
         document.getElementById('main_form').submit();
     }
 </script>
-
+<footer>CIS 286-1 Gavin Harban, Nathan Scott, Jon Moore</footer>
 </body>
 </html>
