@@ -31,6 +31,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['difficulty'])) {
 </head>
 <body>
 
+<input type="text" id="nameInput" placeholder="Your name here..." />
+<br>
+
     <div class="home_title">
         <h1 id="typing"></h1>
         <h2>Do you know the language of computers?</h2>
