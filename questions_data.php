@@ -3,8 +3,8 @@ $questions = [
     'easy' => [
               [
                   'text' => 'Which is a valid C++ data type?',
-                  'options' => ['integer', 'float', 'double', 'number'],
-                  'answer' => 3,
+                  'options' => ['integer', 'float', 'doub', 'number'],
+                  'answer' => 2,
                   'points' => 10
               ],
               [
