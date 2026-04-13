@@ -61,7 +61,7 @@ $questions = [
                   'answer' => 2,
                   'points' => 10
               ],
-              ]
+              ],
       'medium' => [
                   [
                       'text' => 'Who invented C++?',
@@ -123,7 +123,7 @@ $questions = [
                       'answer' => 2,
                       'points' => 20
                   ],
-                  ]
+                  ],
          'hard' => [
                    [
                        'text' => 'What is abstract class in C++?',
