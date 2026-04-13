@@ -1,191 +1,191 @@
 <?php
 $questions = [
     'easy' => [
-        [
-            'text'    => 'What does Big-O notation describe?',
-            'options' => ['Exact runtime of an algorithm', 'Upper bound on growth rate', 'Memory used by a variable', 'Number of bugs in code'],
-            'answer'  => 1,
-            'points'  => 10
-        ],
-        [
-            'text'    => 'Which data structure uses FIFO (First In, First Out) ordering?',
-            'options' => ['Stack', 'Priority Queue', 'Queue', 'Linked List'],
-            'answer'  => 2,
-            'points'  => 10
-        ],
-        [
-            'text'    => 'What is the time complexity of accessing an element in an array by index?',
-            'options' => ['O(n)', 'O(log n)', 'O(1)', 'O(n²)'],
-            'answer'  => 2,
-            'points'  => 10
-        ],
-        [
-            'text'    => 'Which sorting algorithm repeatedly swaps adjacent elements if they are in the wrong order?',
-            'options' => ['Merge Sort', 'Quick Sort', 'Insertion Sort', 'Bubble Sort'],
-            'answer'  => 3,
-            'points'  => 10
-        ],
-        [
-            'text'    => 'What is a binary tree?',
-            'options' => ['A tree where every node has exactly 2 children', 'A tree where nodes store binary numbers', 'A tree where each node has at most 2 children', 'A tree with exactly 2 levels'],
-            'answer'  => 2,
-            'points'  => 10
-        ],
-        [
-            'text'    => 'Which data structure would you use to check if parentheses in an expression are balanced?',
-            'options' => ['Queue', 'Stack', 'Array', 'Hash Table'],
-            'answer'  => 1,
-            'points'  => 10
-        ],
-        [
-            'text'    => 'What is the worst-case time complexity of linear search?',
-            'options' => ['O(1)', 'O(log n)', 'O(n log n)', 'O(n)'],
-            'answer'  => 3,
-            'points'  => 10
-        ],
-        [
-            'text'    => 'Which of these has O(1) average-case lookup time?',
-            'options' => ['Sorted Array', 'Binary Search Tree', 'Linked List', 'Hash Table'],
-            'answer'  => 3,
-            'points'  => 10
-        ],
-        [
-            'text'    => 'What does a recursive algorithm do?',
-            'options' => ['Calls another function', 'Uses only loops', 'Calls itself with a smaller input', 'Runs in parallel'],
-            'answer'  => 2,
-            'points'  => 10
-        ],
-        [
-            'text'    => 'In a singly linked list, what does each node contain?',
-            'options' => ['Only data', 'Data and a pointer to the next node', 'Data and pointers to both neighbors', 'Only a pointer'],
-            'answer'  => 1,
-            'points'  => 10
-        ],
-    ],
+              [
+                  'text' => 'Which is a valid C++ data type?',
+                  'options' => ['integer', 'float', 'double', 'number'],
+                  'answer' => 3,
+                  'points' => 10
+              ],
+              [
+                  'text' => 'Which of the following is used for comments in C++?',
+                  'options' => ['/* comment */', '// comment */', '// comment', 'both // comment or /* comment */'],
+                  'answer' => 4,
+                  'points' => 10
+              ],
+              [
+                  'text' => 'Which of the following is used to terminate the function declaration in C++?',
+                  'options' => [';', ']', ')', ':'],
+                  'answer' => 1,
+                  'points' => 10
+              ],
+              [
+                  'text' => 'Which of the following is called extraction/get from operator?',
+                  'options' => ['<<', '>>', '>', '<'],
+                  'answer' => 2,
+                  'points' => 10
+              ],
+              [
+                  'text' => 'Which tag is used to create a table row?',
+                  'options' => ['<th>', '<tr>', '<td>', '<table>'],
+                  'answer' => 2,
+                  'points' => 10
+              ],
+              [
+                  'text' => 'Which tag is used to add a comment in HTML?',
+                  'options' => ['<!-- comment -->', '// comment', '/* comment */', '# comment'],
+                  'answer' => 1,
+                  'points' => 10
+              ],
+              [
+                  'text' => 'Which CSS property controls text size?',
+                  'options' => ['font-size', 'text-size', 'text-style', 'font-style'],
+                  'answer' => 1,
+                  'points' => 10
+              ],
+              [
+                  'text' => 'Which CSS property controls text size?',
+                  'options' => ['font-size', 'text-size', 'text-style', 'font-style'],
+                  'answer' => 1,
+                  'points' => 10
+              ],
+              [
+                  'text' => 'Which of the following is the correct extension of the Python file?',
+                  'options' => ['.python', '.pl', '.py', '.p'],
+                  'answer' => 3,
+                  'points' => 10
+              ],
+              [
+                  'text' => 'Which of the following character is used to give single-line comments in Python?',
+                  'options' => ['//', '#', '!', '/*'],
+                  'answer' => 2,
+                  'points' => 10
+              ],
+              ]
+      'medium' => [
+                  [
+                      'text' => 'Who invented C++?',
+                      'options' => ['Dennis Ritchie', 'Ken Thompson', 'Brian Kernighan', 'Bjarne Stroustrup'],
+                      'answer' => 4,
+                      'points' => 20
+                  ],
+                  [
+                      'text' => 'What is C++?',
+                      'options' => ['C++ is an object oriented programming language', 'C++ is a procedural programming language', 'C++ supports both procedural and object oriented programming language', 'C++ is a functional programming language'],
+                      'answer' => 3,
+                      'points' => 20
+                  ],
+                  [
+                      'text' => 'The C++ code which causes abnormal termination/behaviour of a program should be written under _________ block.',
+                      'options' => ['catch', 'throw', 'try', 'finally'],
+                      'answer' => 3,
+                      'points' => 20
+                  ],
+                  [
+                      'text' => 'What is Inheritance in C++?',
+                      'options' => ['Deriving new classes from existing classes', 'Overloading of classes', 'Classes with same names', 'Wrapping of data into a single class'],
+                      'answer' => 1,
+                      'points' => 20
+                  ],
+                  [
+                      'text' => 'What is meant by polymorphism in C++?',
+                      'options' => ['class having only single form', 'class having four forms', 'class having many forms', 'class having two forms'],
+                      'answer' => 3,
+                      'points' => 20
+                  ],
+                  [
+                      'text' => 'Which of the following functions is a built-in function in python?',
+                      'options' => ['factorial()', 'print()', 'seed()', 'sqrt()'],
+                      'answer' => 2,
+                      'points' => 20
+                  ],
+                  [
+                      'text' => 'Which of the following is not a core data type in Python programming?',
+                      'options' => ['Tuples', 'Lists', 'Class', 'Dictionary'],
+                      'answer' => 3,
+                      'points' => 20
+                  ],
+                  [
+                      'text' => 'Which of the following is used to read a HTML page and render it?',
+                      'options' => ['Web server', 'Web matrix', 'Web browser', 'None of the mentioned'],
+                      'answer' => 3,
+                      'points' => 20
+                  ],
+                  [
+                      'text' => 'What application can one create even before the introduction of HTML5?',
+                      'options' => ['Forms', 'Browser based games', 'Web applications', 'Mobile applications'],
+                      'answer' => 1,
+                      'points' => 20
+                  ],
+                  [
+                      'text' => 'What does <td> stand for?',
+                      'options' => ['Table database', 'Table data', 'Table directory', 'Table direct row'],
+                      'answer' => 2,
+                      'points' => 20
+                  ],
+                  ]
+         'hard' => [
+                   [
+                       'text' => 'What is abstract class in C++?',
+                       'options' => ['Any Class in C++ is an abstract class', 'Class from which any class is derived', 'Class specifically used as a base class with atleast one virtual functions', 'Class specifically used as a base class with atleast one pure virtual functions'],
+                       'answer' => 4,
+                       'points' => 30
+                   ],
+                   [
+                       'text' => 'Which concept allows you to reuse the written code in C++?',
+                       'options' => ['Inheritance', 'Polymorphism', 'Abstraction', 'Encapsulation'],
+                       'answer' => 1,
+                       'points' => 30
+                   ],
+                   [
+                       'text' => 'How structures and classes in C++ differ?',
+                       'options' => ['Structures by default hide every member whereas classes do not', 'In Structures, members are public by default whereas, in Classes, they are private by default', 'Structures cannot have private members whereas classes can have', 'In Structures, members are private by default whereas, in Classes, they are public by default'],
+                       'answer' => 2,
+                       'points' => 30
+                   ],
+                   [
+                       'text' => 'What is the benefit of C++ input and output over C input and output?',
+                       'options' => ['Both Type safety & Exception', 'Sequence container', 'Exception', 'Type safety'],
+                       'answer' => 4,
+                       'points' => 30
+                   ],
+                   [
+                       'text' => 'What is Inheritance in C++?',
+                       'options' => ['Deriving new classes from existing classes', 'Overloading of classes', 'Classes with same names', 'Wrapping of data into a single class'],
+                       'answer' => 1,
+                       'points' => 30
+                   ],
+                   [
+                       'text' => 'Which keyword is used to define the macros in C++?',
+                       'options' => ['#macro', '#define', 'macro', 'define'],
+                       'answer' => 2,
+                       'points' => 30
+                   ],
+                   [
+                       'text' => 'Which of these is the definition for packages in Python?',
+                       'options' => ['A set of main modules', 'A folder of python modules', 'A number of files containing Python definitions and statements', 'A set of programs making use of Python modules'],
+                       'answer' => 2,
+                       'points' => 30
+                   ],
+                   [
+                       'text' => 'Which module in the python standard library parses options received from the command line?',
+                       'options' => ['getarg', 'getopt', 'main', 'os'],
+                       'answer' => 2,
+                       'points' => 30
+                   ],
+                   [
+                       'text' => 'Which font format is used in web pages?',
+                       'options' => ['EOT', 'WOFF 2.0', 'WOFF', 'SVG Fonts'],
+                       'answer' => 2,
+                       'points' => 30
+                   ],
+                   [
+                       'text' => 'Which is the storage that allows the caching of web pages and their associated resources?',
+                       'options' => ['Offline Web Applications', 'Cookies', 'Web Databases', 'FileSystem API'],
+                       'answer' => 2,
+                       'points' => 30
+                   ],
+                   ]
 
-    'medium' => [
-        [
-            'text'    => 'What is the time complexity of binary search on a sorted array?',
-            'options' => ['O(n)', 'O(n²)', 'O(log n)', 'O(1)'],
-            'answer'  => 2,
-            'points'  => 20
-        ],
-        [
-            'text'    => 'What is the height of a balanced binary search tree with n nodes?',
-            'options' => ['O(n)', 'O(log n)', 'O(√n)', 'O(1)'],
-            'answer'  => 1,
-            'points'  => 20
-        ],
-        [
-            'text'    => 'Which traversal visits nodes in Left → Root → Right order?',
-            'options' => ['Pre-order', 'Level-order', 'Post-order', 'In-order'],
-            'answer'  => 3,
-            'points'  => 20
-        ],
-        [
-            'text'    => 'What is the worst-case time complexity of Quick Sort?',
-            'options' => ['O(n log n)', 'O(n)', 'O(n²)', 'O(log n)'],
-            'answer'  => 2,
-            'points'  => 20
-        ],
-        [
-            'text'    => 'Which algorithm finds the shortest path in an unweighted graph?',
-            'options' => ['DFS', 'Dijkstra\'s', 'BFS', 'Prim\'s'],
-            'answer'  => 2,
-            'points'  => 20
-        ],
-        [
-            'text'    => 'What collision resolution strategy does chaining use in hash tables?',
-            'options' => ['Moving to the next empty slot', 'Doubling the table size', 'Storing colliding elements in a linked list', 'Rehashing with a second function'],
-            'answer'  => 2,
-            'points'  => 20
-        ],
-        [
-            'text'    => 'What is the recurrence relation for Merge Sort?',
-            'options' => ['T(n) = T(n-1) + O(1)', 'T(n) = 2T(n/2) + O(n)', 'T(n) = T(n/2) + O(1)', 'T(n) = T(n-1) + O(n)'],
-            'answer'  => 1,
-            'points'  => 20
-        ],
-        [
-            'text'    => 'What does memoization mean in dynamic programming?',
-            'options' => ['Deleting used subproblem results', 'Solving subproblems bottom-up', 'Caching results of subproblems to avoid redundant computation', 'Parallelizing recursive calls'],
-            'answer'  => 2,
-            'points'  => 20
-        ],
-        [
-            'text'    => 'In Dijkstra\'s algorithm, what data structure gives the best time complexity?',
-            'options' => ['Simple array', 'Sorted linked list', 'Min-heap (priority queue)', 'Stack'],
-            'answer'  => 2,
-            'points'  => 20
-        ],
-        [
-            'text'    => 'A graph with V vertices stored as an adjacency matrix has what space complexity?',
-            'options' => ['O(V + E)', 'O(V²)', 'O(E)', 'O(V log V)'],
-            'answer'  => 1,
-            'points'  => 20
-        ],
-    ],
 
-    'hard' => [
-        [
-            'text'    => 'What does it mean for a problem to be NP-complete?',
-            'options' => ['It has no known solution', 'It can be solved in polynomial time', 'It is in NP and every NP problem reduces to it in polynomial time', 'It requires exponential memory'],
-            'answer'  => 2,
-            'points'  => 30
-        ],
-        [
-            'text'    => 'What is the amortized cost per operation of n push/pop operations on a dynamic array that doubles in size?',
-            'options' => ['O(n)', 'O(log n)', 'O(n²)', 'O(1)'],
-            'answer'  => 3,
-            'points'  => 30
-        ],
-        [
-            'text'    => 'What is the time complexity of the Floyd-Warshall algorithm?',
-            'options' => ['O(V² log V)', 'O(V³)', 'O(V² + E)', 'O(VE)'],
-            'answer'  => 1,
-            'points'  => 30
-        ],
-        [
-            'text'    => 'Which of these problems is NP-complete?',
-            'options' => ['Finding shortest path in a graph', 'Sorting n numbers', 'Boolean Satisfiability (SAT)', 'Binary search'],
-            'answer'  => 2,
-            'points'  => 30
-        ],
-        [
-            'text'    => 'What is the key idea behind Kruskal\'s algorithm?',
-            'options' => ['Greedily add edges by weight without forming cycles', 'Start from a vertex and expand outward', 'Use dynamic programming on the edge list', 'Apply BFS to all vertices simultaneously'],
-            'answer'  => 0,
-            'points'  => 30
-        ],
-        [
-            'text'    => 'What does space complexity O(1) mean?',
-            'options' => ['It uses no memory at all', 'Constant extra memory regardless of input size', 'It uses one byte of memory', 'It runs in one clock cycle'],
-            'answer'  => 1,
-            'points'  => 30
-        ],
-        [
-            'text'    => 'In a skip list with n elements, what is the expected search time?',
-            'options' => ['O(n)', 'O(n log n)', 'O(log n)', 'O(1)'],
-            'answer'  => 2,
-            'points'  => 30
-        ],
-        [
-            'text'    => 'A Red-Black Tree guarantees O(log n) by enforcing what property?',
-            'options' => ['All leaves are at the same depth', 'The tree is perfectly balanced', 'No path from root to leaf is more than twice as long as any other', 'Every node has exactly two children'],
-            'answer'  => 2,
-            'points'  => 30
-        ],
-        [
-            'text'    => 'Which of these is true about a deadlock?',
-            'options' => ['It only occurs in single-threaded programs', 'It requires mutual exclusion, hold-and-wait, no preemption, and circular wait', 'It is easily detected by the CPU', 'It is caused only by infinite recursion'],
-            'answer'  => 1,
-            'points'  => 30
-        ],
-        [
-            'text'    => 'In the Master Theorem T(n) = aT(n/b) + f(n), what does b represent?',
-            'options' => ['Number of subproblems', 'Cost of combining subproblems', 'Factor by which the problem size is reduced', 'Number of recursive calls'],
-            'answer'  => 2,
-            'points'  => 30
-        ],
-    ],
 ];
